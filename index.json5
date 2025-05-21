@@ -1,0 +1,29 @@
+{
+    id: 453782727478466,
+    name: 'issueser',
+    version: 1,
+    author: 'issueser',
+    apps: [
+        {
+            id: 'com.coolapk.market',
+            name: '酷安',
+            groups: [
+                {
+                    key: 1,
+                    name: '选择【关闭】仅关闭当前该条广告',
+                    desc: '您可选择点击【今日免广告】免除今日所有信息流广告，也可以选择【关闭】仅关闭当前该条广告',
+                    rules: [
+                        {
+                            fastQuery: true,
+                            activityIds: null,
+                            matches: [
+                                'LinearLayoutCompat[id="com.coolapk.market:id/parentPanel"] TextView[text*="【今日免广告】"]',
+                                'LinearLayoutCompat[id="com.coolapk.market:id/parentPanel"] ScrollView Button[text="关闭"]',
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+    ],
+}
