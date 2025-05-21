@@ -45,7 +45,7 @@
                     ],
                 },
                 {
-                    key: 250522073620,
+                    key: 250522001,
                     name: 'Player id_ai_ad_container',
                     desc: 'btn_close 广告',
                     rules: [
