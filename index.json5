@@ -44,6 +44,18 @@
                         },
                     ],
                 },
+                {
+                    key: 250522073620,
+                    name: 'Player id_ai_ad_container',
+                    desc: 'btn_close 广告',
+                    rules: [
+                        {
+                            fastQuery: true,
+                            activityIds: 'com.mgtv.ui.videoplay.MGVideoPlayActivity',
+                            matches: 'FrameLayout[vid="id_ai_ad_container"] +n FrameLayout ImageButton[vid="btn_close"]',
+                        },
+                    ],
+                },
             ],
         },
     ],
