@@ -1,7 +1,7 @@
 {
     id: 453782727478466,
     name: 'issueser',
-    version: 1,
+    version: 2,
     author: 'issueser',
     apps: [
         {
@@ -19,6 +19,27 @@
                             matches: [
                                 'LinearLayoutCompat[id="com.coolapk.market:id/parentPanel"] TextView[text*="【今日免广告】"]',
                                 'LinearLayoutCompat[id="com.coolapk.market:id/parentPanel"] ScrollView Button[text="关闭"]',
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        {
+            id: 'com.hunantv.imgo.activity',
+            name: '芒果TV',
+            groups: [
+                {
+                    key: 1,
+                    name: 'Player ad_layer',
+                    desc: 'style_image_ivImage 广告',
+                    rules: [
+                        {
+                            fastQuery: true,
+                            activityIds: 'com.mgtv.ui.videoplay.MGVideoPlayActivity',
+                            matches: [
+                                'FrameLayout[vid="ad_layer"] TextView[text*="广告"]',
+                                'FrameLayout[vid="ad_layer"] ImageView[vid="closeAdIcon"]',
                             ],
                         },
                     ],
